@@ -1,3 +1,13 @@
+<!-- /*
+* File: index.html
+* Author: Szép Andor
+* Copyright: 2026, Szép Andor
+* Group: Szoft I/N
+* Date: 2026-03-18
+* Github: https://github.com/andorbandi/
+* Licenc: MIT
+*/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +21,34 @@
   <div class="container">
     <h1>Rombusz</h1>
 
-    <form>
+    <form id="rhombusForm">
       <div class="input">
-        <label for="" class="form-label"></label>
+        <label for="side" class="form-label">Oldal</label>
         <input type="text" class="form-control"
-        id="">
+        id="side">
+      </div>
+      <div class="input">
+        <label for="angle" class="form-label">Alfa</label>
+        <input type="text" class="form-control"
+        id="angle">
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-2">Számít</button>
+
+      <div class="input">
+        <label for="perimeter" class="form-label">Kerület</label>
+        <input type="text" class="form-control"
+        id="perimeter">
+      </div>
+      <div class="input">
+        <label for="area" class="form-label">Terület</label>
+        <input type="text" class="form-control"
+        id="area">
       </div>
     </form>
     
   </div>
   <script src="bootstrap.js"></script>
-  <script src="app.js"></script>  
+  <script type="module" src="app.js"></script>  
 </body>
 </html>
